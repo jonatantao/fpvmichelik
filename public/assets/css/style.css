@@ -634,6 +634,7 @@ section {
   font-weight: 700;
   padding-bottom: 15px;
   font-size: 24px;
+  width: max-content;
 }
 
 .staff .icon-box h4 a {
@@ -650,6 +651,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  margin-top: -90px;
 }
 
 .staff .icon-box:hover {
