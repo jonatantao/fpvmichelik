@@ -1207,7 +1207,7 @@ section {
 
 .breadcrumbs ol {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   padding: 0;
   margin: 0;
