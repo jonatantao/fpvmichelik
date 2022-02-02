@@ -38,6 +38,12 @@
       $('#message').css('color','red');
       $('#message').html('Heslo sa nezhoduje');
     }
+    let cislo = $("#number").val() % 2 === 0;
+    if (cislo){
+      $("#even").append($("#number").val() + " ");
+    } else {
+      $("#noteven").append($("#number").val() + " ");
+    }
   }
 
   
@@ -131,6 +137,13 @@
           <br>
           <br>
           <button type="submit" id="submit" onclick="formSubmit()"><b>Prihlásiť</b></button>
+        
+
+          <input type="text" placeholder="Zadajte číslo" id="number" name="number" onkeypress='check();' required><br>
+          <label for="even"><b>Párne</b></label>
+          <span class="even" id="even"></span><br>
+          <label for="noteven"><b>Nepárne</b></label>
+          <span class="noteven" id="noteven"></span>
         </div>
       </form>
     </section>
